@@ -319,8 +319,9 @@ function mostrarItems(){
       let totalOutput=document.querySelector('#totales');
       totalOutput.innerHTML='';
    }
-   let totalButton=document.querySelector('#total').addEventListener('click',calcularTotal)
-   function calcularTotal(){
+   let totalButton=document.querySelector('#total').addEventListener('click',calcularTotalPesos)
+   function calcularTotalPesos(){
+      console.log('hola total')
       for(let i=0;i<sellConceptDollar.length; i++){
           totalDolar+=parseInt(sellConceptDollar[i][1]); 
           totalPesos+=sellConceptPesos[i][1]; 
@@ -420,10 +421,11 @@ function mostrarVentas(){
 }
 function reset7(){
    tabla.innerHTML='';
+   totales7.innerHTML='';
    misVentas.reset();
 }
 function calcularTotal(){
-   /* let mesaVenta=; */
+   let mesaVenta=document.querySelector('#mesaVenta').value;
    
    if(mesaVenta==='Seleccione Mesa'){
       alert('seleccione una mesa')
@@ -435,7 +437,7 @@ function calcularTotal(){
    let precioPrecioDes=0;
    let ventas=misVentas.leerVentas(); 
    console.log(ventas)
-   let ventasMesa=ventas.filter(venta=>venta.mesa=='mesa1');
+   let ventasMesa=ventas.filter(venta=>venta.mesa==mesaVenta);
    console.log(ventasMesa);
    for(let i=0; i<ventasMesa.length;i++){
       ventaTotalMesa+= parseFloat(ventasMesa[i].precio); 
