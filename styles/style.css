@@ -1,0 +1,51 @@
+code{
+  background-color: #000;
+  color: #119648;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 400px;
+  border-radius: 10px;
+  background-color: #2ecc71;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.logo-text {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.logo-text span {
+  color: #fff;
+  background-color: #000;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Animación de rotación */
+.logo-container:hover {
+  animation: rotate 1s linear forwards;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#code{
+  background-color: #000;
+}
+#hora{
+  width: 120px;
+  font-size: 30px;
+}

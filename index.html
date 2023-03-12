@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="styles/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.2.3/sandstone/bootstrap.min.css" integrity="sha512-htdEY26zvWZsYx2eXj2dzqQiivv7tzUf0pikw66WHEcNkFNYsHEQqIkJYsSWgS7a8ST4q5Wqrjk5RZS4MEX90g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="container ">
+        <div class="row mt-3 ">
+            <div class="row text-center d-flex justify-content-center">
+                            
+                <h1 class="col-sm-6  text-bg-dark rounded-2 text-success">Solucion Taller</h1>
+            </div>
+            
+            <hr>
+           <ol>
+            <li>
+                <p>
+                    Un corredor de maratón (distancia 42,195 Km) ha recorrido la carrera en 2 horas 25 minutos. Se desea un 
+                    algoritmo que calcule el tiempo medio en minutos por kilómetro
+                </p>
+                <div id="code">
+                    <code>
+                        <h6>let distancia=42.195;</h6>
+                        <h6>let tiempoHora=2;</h6>
+                        <h6>let tiempoMinutos=25;</h6>
+                        <h6>function calcularMinutos(distancia,tiempoHoras,tiempoMinutos){</h6>
+                        <h6>let minutos=tiempoHoras*60;</h6>   
+                        <h6>let minutosTotales=minutos+tiempoMinutos;</h6>       
+                        <h6>let minutosKilometro=minutosTotales/distancia;</h6>       
+                        <h6>return minutosKilometro;</h6>        
+                        <h6>}</h6>        
+                    </code>
+                </div>
+                
+                
+            </li>
+            <hr>
+            <li>
+                <p>
+                    Realizar la conversión de una temperatura dada en grados Centígrados a grados Fahrenheit (Fórmula: F = 
+                    (9/5) C + 32). 
+                </p>
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <label class="form-label mt-4" for="inputValid">Inserte temparetura en °C para convertir a °F</label>
+                    <input type="number" class="form-control is-valid" id="gradosC" placeholder="temperatura °C">
+                    <button type="button" class="btn btn-success mt-1" id='convertirGrados'>Convertir a °F</button>
+                    <button type="button" class="btn btn-warning mt-1" id="reset1">Reset</button>
+                    <div class="response2 mt-1">
+                        
+                    </div>
+                    
+                </div>
+            </li>
+            <hr>
+            <li>
+                <p>
+                    Escribir el algoritmo que permite calcular la nota correspondiente al primer parcial de “análisis” para un 
+                    estudiante cualquiera. Se debe considerar que hay dos talleres y un quiz, que en conjunto valen un 30% de 
+                    la nota y el resto (70%) corresponde a la nota del examen parcial. 
+                </p>
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <label class="form-label mt-4" for="inputValid">Inserte las notas en sus respectivos campos</label>
+                    <div id="formContainer">
+                        <input type="number" class="form-control is-valid mt-1" id="taller1" placeholder="Taller 1">
+                        <input type="number" class="form-control is-valid mt-1" id="taller2" placeholder="Taller 2">
+                        <input type="number" class="form-control is-valid mt-1" id="quiz" placeholder="Quiz">
+                        <input type="number" class="form-control is-valid mt-1" id="parcial" placeholder="Parcial">
+                    </div>
+                    <!-- botones -->
+                    <button type="button" class="btn btn-success mt-1" id='calcularNota'>Calcular Nota</button>
+                    <button type="button" class="btn btn-warning mt-1" id="reset3">Reset</button>
+                    <!-- respuesta -->
+                    <div class="response3 mt-1">
+                        
+                    </div>
+                    
+                </div>
+                
+                
+            </li>
+           <hr> 
+            <li>
+                <p>
+                    Un capital C está situado a un tipo de interés R anual ¿al término de cuántos años se doblará? 
+                </p>
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <div class="formContainer4">
+                    <label class="form-label mt-4" for="inputValid">Inserte Cantidad</label>
+                    <input type="number" class="form-control is-valid" id="cantidad" placeholder="Cantidad">
+                    <label class="form-label mt-4" for="inputValid">Inserte interes/redito</label>
+                    <input type="number" class="form-control is-valid" id="redito" placeholder="interes/redito">
+                    <label class="form-label mt-4" for="inputValid">Elija unidad de tiempo</label>
+                    <select class="form-select form-control is-valid" id='utiempo'aria-label="Default select example">
+                        <option selected>unidad de Tiempo</option>
+                        <option value="100">anual</option>
+                        <option value="1200">mensual</option>
+                        <option value="36000">diario</option>
+                    </select>
+                    <label class="form-label mt-4" for="inputValid">Inserte cantidad de dias años o meses</label>
+                    <input type="number" class="form-control is-valid" id="tiempo" placeholder="cantidad">
+                    </div>
+                    <button type="button" class="btn btn-success mt-1" id='calcularIntereses'>Calcular Intereses</button>
+                    <button type="button" class="btn btn-warning mt-1" id="reset4">Reset</button>
+                    <div class="response4 mt-1">
+                        
+                    </div>
+                    
+                </div>
+            </li>
+            <hr>
+            <li>
+                <p>
+                    Elaborar un algoritmo que permita ingresar 20 números y muestre todos los números menores e iguales a 
+                    25. 
+                </p>
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <strong>
+                        Debe ingresar un minimo de 20 numeros para ver los mayores a 25. <br> 
+                    </strong>
+                
+                    <input type="number" class="form-control is-valid" id="num" placeholder="inserte aqui el numero">
+                    <button type="button" class="btn btn-success mt-1" id='enviarNums'>enviar numero</button>
+                    <button type="button" class="btn btn-warning mt-1" id="reset5">Reset</button>
+                    <div class="response5 mt-1">
+                        
+                    </div>
+                </div>    
+            </li>
+            <hr>
+            <li>
+                <div class="container">
+                    <p>
+                        Hacer un programa que sume 5 precios de camisas (en dólares) y que luego muestre el total de la venta en 
+                        pesos.
+                    </p>
+                    <strong>
+                        Ingrese el precio de las camisas <br> 
+                    </strong>
+                    
+                    <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-4 mt-1">
+                                <input type="text" class="form-control is-valid mt-1" id="desc" placeholder="inserte aqui el descripcion">
+                                <input type="text" class="form-control is-valid mt-1" id="dollar" placeholder="inserte aqui el precio en dolares">
+                                <button type="button" class="btn btn-success mt-1" id='send'>enviar</button>
+                                <button type="button" class="btn btn-success mt-1" id='total'>calcular</button>
+                                <button type="button" class="btn btn-warning mt-1" id="reset6">Reset</button>
+                            </div>
+                            <div class="col-12- col-sm-12 col-md-4 mt-1" id="respuesta6">
+                               
+                                
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4 mt-1" id="totales">
+                               
+                                
+                            </div>  
+                                  
+                    </div>
+                        
+                        
+                    
+                </div>    
+            </li>
+            <hr>
+            <li>
+                <p>
+                    Hacer un programa que registre el consumo realizado por los clientes de un restaurante, si el consumo de 
+                    cada cliente excede 50000 se hará un descuento del 20%. Se debe mostrar el pago de cada cliente y el total 
+                    de todos los pagos. 
+                </p>
+                <strong>
+                    Ingrese el numero de la mesa la descripcio y el precio <br> 
+                </strong>
+                <!-- <select class="form-select" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select> -->
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-4 mt-1">
+                        <select id="numeroMesa" class="form-select" aria-label="Default select example">
+                            <option selected>Seleccione Mesa</option>
+                            <option value="mesa1">Mesa1</option>
+                            <option value="mesa2">Mesa2</option>
+                            <option value="mesa3">Mesa3</option>
+                            <option value="mesa4">Mesa4</option>
+                            <option value="mesa5">Mesa5</option>
+                            <option value="mesa6">Mesa6</option>
+                            <option value="mesa7">Mesa7</option>
+                        </select>
+                        <input type="text" class="form-control is-valid mt-1" id="descripcion" placeholder="descripcion">
+                        <input type="text" class="form-control is-valid mt-1" id="precio" placeholder="inserte precio">
+                        <button type="button" class="btn btn-success mt-1" id='leer'>enviar</button>
+                        <button type="button" class="btn btn-warning mt-1" id="reset7">Reset</button>
+                        
+                        <select id="mesaVenta" class="form-select mt-1" aria-label="Default select example">
+                            <option selected>Seleccione Mesa</option>
+                            <option value="mesa1">Mesa1</option>
+                            <option value="mesa2">Mesa2</option>
+                            <option value="mesa3">Mesa3</option>
+                            <option value="mesa4">Mesa4</option>
+                            <option value="mesa5">Mesa5</option>
+                            <option value="mesa6">Mesa6</option>
+                            <option value="mesa7">Mesa7</option>
+                        </select>
+                        <button type="button" class="btn btn-success mt-1" id='total7'>calcular</button>
+                    </div>
+                    <div class="col-12- col-sm-12 col-md-8 mt-1 style='overflo">
+                       
+                        <table class="table table-hover">
+                            <thead>
+                              <tr>
+                                <th scope="col">Mesa</th>
+                                <th scope="col">Descripcion</th>
+                                <th scope="col">Precio</th>
+                                <th scope="col">Fecha</th>
+                              </tr>
+                            </thead >
+                            <tbody id='tabla7'>
+                              
+                              
+                            </tbody>
+                          </table>
+                    </div>
+                    <div class="row" id="totales7">
+                        <div class="col-xs-12 col-sm-12 col-md-12 mt-1 bg-warning rounded-1" id="totales7">
+                            
+                             
+                        </div>   
+                    </div>
+                </div>
+
+                    
+            </li>
+            <hr>
+            <li>
+                <p>
+                    Diseñar un algoritmo que permita ingresar la hora, minutos y segundos, y que calcule la hora en el siguiente 
+                    segundo ("0<= H <=23", "0<= M <=59" "0<= S<=59").
+                </p>
+
+                <div id="code">
+                    <code>
+                       <h6>  let horaActual=[23,30,59];</h6>
+                        <h6> function calcularHora(horaActual){</h6>
+                        <h6> let nuevaHora=horaActual;</h6>
+    
+                       <h6> nuevaHora[2]+=1;</h6>
+    
+                       <h6> if(nuevaHora[2]>59){</h6>
+                       <h6> nuevaHora[2]=0;</h6>
+                       <h6> console.log(nuevaHora[2]);</h6>
+                       <h6> nuevaHora[1]+=1;</h6>
+
+                       <h6>  }</h6>
+                      <h6>  if(nuevaHora[1]>59){</h6>
+                      <h6>  nuevaHora[1]=0;</h6>
+                       <h6> nuevaHora[0]+=1</h6>
+                       <h6> }</h6>
+                       <h6>  if(nuevaHora[0]>24){</h6>
+                       <h6> nuevaHora[0]=1</h6>
+                       <h6> }</h6>
+                       <h6>  let cadena=nuevaHora.toString();</h6>
+                       <h6>  let horaConsola=cadena.replace(/,/g,':');</h6>
+                       <h6> console.log(horaConsola);</h6>
+                       <h6>  return horaConsola;</h6>
+
+                       <h6>}</h6>
+                       <h6>let horaConsola=horaActual.toString().replace(/,/g,':')</h6>
+                       <h6> let nuevaHora=calcularHora(horaActual);</h6>
+                       <h6> console.log(horaConsola,nuevaHora);</h6>
+                    </code>
+                </div>
+                
+                
+            </li>
+            <hr>
+            <li>
+                <p>
+                    Dado N, escribir el producto desde 1 hasta N. 
+                </p>
+                <div id="code">
+                    <code>
+                        <h6>let resultado=null;</h6>
+                        <h6>function calucularFactorial(n){</h6>
+                        <h6>resultado=1</h6>
+                        <h6>for(let i=1;i<=n;i++){</h6>
+                        <h6>resultado*=i;</h6>
+                        <h6>}</h6>
+                        <h6>}</h6>
+                        <h6>calucularFactorial(5);</h6>
+                        <h6>console.log('factorial=',resultado);</h6>
+                    </code>
+                </div>
+                
+            </li>
+            <hr>
+            <li>
+                <p>
+                    Realizar un algoritmo que muestre por pantalla la tabla de multiplicar decreciente de cualquier número, 
+                    ingresado entre el 1 y el 10. 
+                </p>
+                <div id="code">
+                    <code>
+                    <h6>let numero=5</h6>
+                    <h6>for(i=10;i>=1;i--){</h6>
+                    <h6>console.log(numero*i);</h6>
+                    <h6>}</h6>
+                </code>
+                </div>
+            </li>
+           </ol>     
+        </div>
+        
+    </div>
+    <div class="d-flex justify-content-center">
+        <div class="logo-container">
+            <div class="logo-text">
+              <span>Oscar</span> Mora
+            </div>
+          </div>
+    </div>
+    
+    <!-- <script src="taller.js"></script> -->
+    <script src="taller.js"></script>
+    
+</body>
+</html>
